@@ -10,6 +10,10 @@ import { DogService } from 'src/app/service/dog.service';
 export class CareComponent implements OnInit {
   dogs: Dog[];
   careInfo: boolean = false;
+  careInfoButtonText: string = 'Walking in hot weather tips'
+  weightInfoButtonText: string = 'Weight tips'
+
+  weightInfo: boolean = false;
   constructor(private dogService: DogService) {
     this.dogs = []
    }
@@ -23,5 +27,9 @@ export class CareComponent implements OnInit {
 
   showCareInfo() {
     this.careInfo = !this.careInfo;
+  }
+
+  showWeightInfo() {
+    this.weightInfo = !this.weightInfo;
   }
 }

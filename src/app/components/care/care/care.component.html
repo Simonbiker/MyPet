@@ -11,7 +11,7 @@
             </p>
 
             <button class="btn btn-primary toggleInfo" type="button" (click)="showCareInfo()">
-                List of tips
+                {{careInfoButtonText}}
             </button>
 
             <!-- Collapsed content -->
@@ -63,8 +63,45 @@
     <div class="media care">
         <div class="media-body">
             <h5 class="mt-0 mb-1">Feeding & weight</h5>
-            Knowing your dogs ideal weight and how much you should be feeding it.
-            <a href="#!" class="btn btn-primary">Feeding & weight</a>
+            <p>
+                Knowing your dogs ideal weight and how much you should be feeding it.
+            </p>
+            <button class="btn btn-primary toggleInfo" type="button" (click)="showWeightInfo()">
+                {{weightInfoButtonText}}
+            </button>
+
+            <div class="weightInfo" *ngIf="weightInfo">
+                <ol class="list-group list-group-flush list" type="1" list-group-item-danger>
+                    <li class="list-group-item">Always listen to your vet when it comes to feeding and weight.</li>
+                    <li class="list-group-item">Ask your vet what your dog's ideal weight should be.</li>
+                    <li class="list-group-item">A puppy will need to fed more often than an older dog. This should be
+                        discussed with the
+                        vet to suit the breed of your dog. Age and breed factor greatly in what and how much
+                        your dog should be given.</li>
+                    <li class="list-group-item">Unless directed by a vet, you can give your dog a couple of appropriate
+                        snacks and treats
+                        throughout the day.</li>
+                    <li class="list-group-item">Try not to give your dog human food. If you do give your dog meat, do
+                        not put any
+                        seasoning on it. This includes salt. You can ask your vet what human food is safe for dogs
+                        to eat.</li>
+                    <li class="list-group-item">There are some foods that should never be given to dogs. These include:
+                        <ol>
+                            <li>Chocolate.</li>
+                            <li>Grapes or raisins.</li>
+                            <li>Onions.</li>
+                            <li>Raw potatoes.</li>
+                            <li>Seeds from fruit such as apples (this can contain levels of cyanide).</li>
+                            <li>Rinds of fruit like watermelons.</li>
+                            <li>Small poultry bones or bones that easily splinter (they can lodge in your dog's
+                                throat).</li>
+                        </ol>
+                    </li>
+                    <li class="list-group-item">Your dog will have an internal clock, so try and feed your dog around
+                        the same time
+                        every day.</li>
+                </ol>
+            </div>
         </div>
         <img class="ml-3 rounded-pill" width="400" height="300" src="assets/images/food.jpg"
             alt="Generic placeholder image">
