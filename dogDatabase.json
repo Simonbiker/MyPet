@@ -1,0 +1,19 @@
+{
+    "dogs":[
+       {
+          "id":1,
+          "name":"Xanthe",
+          "sex":"female",
+          "age":12,
+          "newPatient":false
+       },
+       {
+          "id":2,
+          "name":"Xandy",
+          "sex":"female",
+          "age":9,
+          "newPatient":false
+       }
+    ]
+}
+   

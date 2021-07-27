@@ -1,11 +1,72 @@
-<h1>care works!</h1>
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="container">
+    <div class="media care">
+        <img class="mr-3 rounded-pill" width="400" height="300" src="assets/images/paws.jpg"
+            alt="Generic placeholder image">
+        <div class="media-body">
+            <h5 class="mt-0">Walking in hot weather</h5>
+            <p>
+                Before walking your dog check the tempture of the bavement.
+                You can do this by placing the palm of your hand on the concrete.
+                If you are unable to hold there then your dog should not be walking.
+            </p>
+
+            <button class="btn btn-primary toggleInfo" type="button" (click)="showCareInfo()">
+                List of tips
+            </button>
+
+            <!-- Collapsed content -->
+            <div class="careInfo" *ngIf="careInfo">
+                <ol class="list-group list-group-flush list" type="1" list-group-item-danger>
+                    <li class="list-group-item">Make sure your dog always has access to fresh clean water.</li>
+                    <li class="list-group-item">
+                        Make sure your dog has access to shade or cooler rooms. Pull down blinds or draw
+                        curtains if necessary.</li>
+                    <li class="list-group-item">As a cooling treat, you can give your dog a handful of frozen peas. You
+                        can also add ice
+                        to their water or freeze their favourite treat and give it as an ice-cream.</li>
+                    <li class="list-group-item">If you want to walk your dog, try to do so in the early morning and
+                        evenings. If you are
+                        walking your dog on concrete, touch the concrete with your palm as a test. If it feels hot
+                        or you can't keep you hand comfortably on the concrete for 5 seconds, it is too hot to walk
+                        your dog with their sensitive pads.</li>
+                    <li class="list-group-item">If you do walk you dog, make sure you carry water for them.</li>
+                    <li class="list-group-item">Never leave your dog in the car even with the windows open, this can
+                        prove fatal if the
+                        car overheats. This can happen in less than 5 minutes.</li>
+                    <li class="list-group-item">Be extra vigilant with older or overweight dogs as they are more prone
+                        to overheating. </li>
+                    <li class="list-group-item">To avoid sunburns, put some dog safe sun cream on their ears and noses.
+                        Especially if it's
+                        a white or light coloured dog.</li>
+                    <li class="list-group-item">If you suspect your dog is suffering from heatstroke, contact the vet
+                        immediately. Signs
+                        include:
+                        <ol>
+                            <li>Heavy panting</li>
+                            <li>Excessive drooling</li>
+                            <li>Lethargy</li>
+                            <li>Uncoordinated movements</li>
+                            <li>Vomiting</li>
+                            <li>Collapsing</li>
+                        </ol>
+                    </li>
+                    <li class="list-group-item">Keep up to date with their anti-flea and tick lotions, as both are more
+                        prevalent during the
+                        summer months.</li>
+
+                </ol>
+            </div>
+
+        </div>
+    </div>
+    <hr />
+    <div class="media care">
+        <div class="media-body">
+            <h5 class="mt-0 mb-1">Feeding & weight</h5>
+            Knowing your dogs ideal weight and how much you should be feeding it.
+            <a href="#!" class="btn btn-primary">Feeding & weight</a>
+        </div>
+        <img class="ml-3 rounded-pill" width="400" height="300" src="assets/images/food.jpg"
+            alt="Generic placeholder image">
     </div>
 </div>
